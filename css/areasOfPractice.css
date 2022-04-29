@@ -1,0 +1,78 @@
+.banner {
+  position: fixed;
+  top: 30vh;
+  left: 0;
+  height: 70vh;
+  width: 100%;
+  background-image: url('../img/HPBanner2-2k.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.areasGrid {
+  position: relative;
+  display: grid;
+  top: 35vh;
+  left: 0;
+  height: 60vh;
+  width: 95%;
+  margin: 0 auto;
+  grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+  row-gap: 3vh;
+  column-gap: 3vw;
+  justify-items: center;
+}
+
+.areaBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #00000090;
+  border-radius: 2.5rem;
+}
+
+.areaBox h1 {
+  font-family: 'Spectral SC';
+  color: #dedede;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 500;
+  margin: 0 1rem;
+  overflow: hidden;
+}
+
+.areas1 {
+  grid-area: 1/1 / 2/2;
+}
+
+.areas2 {
+  grid-area: 1/2 / 2/3;
+}
+
+.areas3 {
+  grid-area: 1/3 / 2/4;
+}
+
+.areas4 {
+  grid-area: 2/1 / 3/2;
+}
+
+.areas5 {
+  grid-area: 2/2 / 3/3;
+}
+
+.areas6 {
+  grid-area: 2/3 / 3/4;
+}
+
+.areas7 {
+  grid-area: 3/2 / 4/3;
+}
+@media only screen and (min-width: 1210px) and (orientation: landscape){
+  .banner {
+    top: 18vh;
+    height: 82vh;
+  }
+}
